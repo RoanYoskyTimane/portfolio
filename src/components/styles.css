@@ -277,6 +277,14 @@ body {
   font-weight: 800;
 }
 
+.skill-Hero{
+  margin-top: 50px;
+}
+
+.skill-Hero div {
+  margin-top: 10px;
+}
+
 .tech {
   display: flex;
   flex-direction: row; /* Adjusting for smaller screens */

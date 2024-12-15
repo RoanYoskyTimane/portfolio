@@ -21,7 +21,7 @@ function Skill()
 {
     return(
         <section id="skills">
-        <h2>Skills</h2>
+        <h2>Projects</h2>
         <div id="all">
         {frontend.map(createDescriptionFrontend)}
         {backend.map(createDescriptionBackend)}
