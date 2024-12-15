@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Skill() 
+function Project() 
 {
     return(
         <section id="project">
@@ -11,4 +11,4 @@ function Skill()
     );
 }
 
-export default Skill;
+export default Project;
