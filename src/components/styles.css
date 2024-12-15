@@ -256,27 +256,6 @@ body {
 
 
 /*Skills section*/
-#skills {
-  display: flex;
-  flex-direction: column; /* Adjusting for smaller screens */
-  justify-content: center;
-  align-items: center;
-  height: auto; /* Use auto to adjust height based on content */
-  margin-top: 10rem;
-  padding: 2rem 40px; /* Combined padding for simplicity */
-  background: #6A9AB0;
-  border-radius: 25px;
-  border: 2px solid #6A9AB0;
-  margin: 5rem; /* Combined margins for simplicity */
-  text-align: center; /* Center align text for better readability on small screens */
-  gap: 10px;
-}
-
-#skills h2 {
-  color: white;
-  font-weight: 800;
-}
-
 .skill-Hero{
   margin-top: 50px;
 }
@@ -305,6 +284,28 @@ body {
   #all{
     display: block;
   }
+}
+
+/*Project Section*/
+#project {
+  display: flex;
+  flex-direction: column; /* Adjusting for smaller screens */
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Use auto to adjust height based on content */
+  margin-top: 10rem;
+  padding: 2rem 40px; /* Combined padding for simplicity */
+  background: #6A9AB0;
+  border-radius: 25px;
+  border: 2px solid #6A9AB0;
+  margin: 5rem; /* Combined margins for simplicity */
+  text-align: center; /* Center align text for better readability on small screens */
+  gap: 10px;
+}
+
+#project h2 {
+  color: white;
+  font-weight: 800;
 }
 
 /*Footer Section*/
