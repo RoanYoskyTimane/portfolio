@@ -176,7 +176,6 @@ body {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-
 /*Icons*/
 .icon-container{
   display: flex;
@@ -343,6 +342,83 @@ body {
 
 .card-content p{
   font-size: 15px;
+}
+
+/* For smaller screens */
+@media (max-width: 767px) { 
+  .card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    padding: 0 16px; /* Padding around the container for spacing */
+    gap: 16px; /* Add consistent gap between cards */
+  }
+
+  .card {
+    margin: 0 auto; /* Center each card within the container */
+    width: 90%; /* Adjust card width to fit smaller screens */
+  }
+}
+
+
+
+/*Contact Section*/
+#contact-me {
+  display: flex;
+  flex-direction: column; /* Adjusting for smaller screens */
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Use auto to adjust height based on content */
+  margin-top: 10rem;
+  padding: 2rem 40px; /* Combined padding for simplicity */
+  background: #001F3F;
+  border-radius: 25px;
+  border: 2px solid #001F3F;
+  margin: 5rem; /* Combined margins for simplicity */
+  text-align: center; /* Center align text for better readability on small screens */
+}
+
+#contact-me h2 {
+  color: #6A9AB0;
+  font-weight: 800;
+}
+
+input {
+  border-radius: 15px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  width: 250px;
+}
+
+textarea{
+  border-radius: 15px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  width: 250px;
+  min-height: 100px; /* Set the minimum height */ 
+  max-width: 100%; /* Set the maximum width to 100% of the container */
+  resize: vertical;
+}
+
+.contact-form { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 15px; /* Adjust the gap as needed */ 
+  padding: 20px; 
+  margin: 0 auto; 
+  max-width: 400px; /* Adjust max width as needed */
+}
+
+.button-form{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 9rem;
+  border-radius: 2rem;
+  background: #6A9AB0;
+  color: white;
+  cursor:pointer;
+  border: #6A9AB0  0.1rem solid;
 }
 
 /*Footer Section*/
