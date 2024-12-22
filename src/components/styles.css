@@ -345,7 +345,7 @@ body {
 }
 
 /* For smaller screens */
-@media (max-width: 767px) { 
+@media (max-width: 450px) {
   .card-container {
     display: flex;
     flex-direction: column; /* Stack cards vertically */
@@ -355,7 +355,7 @@ body {
 
   .card {
     margin: 0 auto; /* Center each card within the container */
-    width: 90%; /* Adjust card width to fit smaller screens */
+    width: 162px; /* Adjust card width to fit smaller screens */
   }
 }
 
@@ -421,20 +421,15 @@ textarea{
   border: #6A9AB0  0.1rem solid;
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  }
+@media (max-width: 450px) {
 
   input {
-      width: 250px;
+      width: 150px;
       height: auto;
   }
 
   textarea{
-    width: 250px;
+    width: 150px;
     height: auto;
   }
 }
