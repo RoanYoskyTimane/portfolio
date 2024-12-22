@@ -421,6 +421,24 @@ textarea{
   border: #6A9AB0  0.1rem solid;
 }
 
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  input {
+      width: 250px;
+      height: auto;
+  }
+
+  textarea{
+    width: 250px;
+    height: auto;
+  }
+}
+
 /*Footer Section*/
 .footer {
   background-color: #001F3F;
