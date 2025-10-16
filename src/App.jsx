@@ -5,18 +5,28 @@ import About from './components/About'
 import Footer from './components/Footer';
 import Project from './components/Project';
 import Contact from './components/Contact';
-
+import './styles.css'
 function App() {
-  const [count, setCount] = useState(0)
+  const [darkMode, setDarkMode] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(id);
+    }
+  };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <div className="App">
-      <Header></Header>
-      <Hero></Hero>
-      <About></About>
-      <Project></Project>
-      <Contact></Contact>
-      <Footer></Footer>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+      <Header 
+        activeSection={activeSection}
+        scrollToSection={scrollToSection}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+      />   
     </div>
   )
 }
