@@ -1,0 +1,104 @@
+.about {
+  padding: 8rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.light-mode .about {
+  background-color: #F9FAFB;
+}
+
+.dark-mode .about {
+  background-color: #1A2942;
+}
+
+.about-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.light-mode .section-title {
+  color: #213555;
+}
+
+.dark-mode .section-title {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.75rem;
+  }
+}
+
+.section-divider {
+  width: 4rem;
+  height: 1px;
+  margin: 0 auto 2rem;
+  border-radius: 9999px;
+}
+
+.light-mode .section-divider {
+  background-color: #3E5879;
+}
+
+.dark-mode .section-divider {
+  background-color: white;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.light-mode .about-text {
+  color: #3E5879;
+}
+
+.dark-mode .about-text {
+  color: #D1D5DB;
+}
+
+.about-text:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  border: 1px solid;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: none;
+}
+
+.light-mode .cta-button {
+  border-color: #213555;
+  color: #213555;
+}
+
+.dark-mode .cta-button {
+  border-color: white;
+  color: white;
+}
+
+.light-mode .cta-button:hover {
+  background-color: #213555;
+  color: white;
+}
+
+.dark-mode .cta-button:hover {
+  background-color: white;
+  color: #213555;
+}
