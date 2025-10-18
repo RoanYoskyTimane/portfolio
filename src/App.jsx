@@ -26,7 +26,13 @@ function App() {
         scrollToSection={scrollToSection}
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
-      />   
+      />
+      <Hero scrollToSection={scrollToSection} darkMode={darkMode} />
+      <About scrollToSection={scrollToSection} darkMode={darkMode} />
+      {/* <Skills darkMode={darkMode} /> */}
+      {/* <Projects darkMode={darkMode} /> */}
+      {/* <Contact darkMode={darkMode} /> */}
+      {/* <Footer darkMode={darkMode} /> */}
     </div>
   )
 }

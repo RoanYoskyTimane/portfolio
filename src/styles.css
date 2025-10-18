@@ -1,27 +1,10 @@
-/* Global.css or index.css */
-
-/* ------------------------------------------------ */
-/* CSS Reset for Default Browser Margins */
-/* ------------------------------------------------ */
 html, body {
   margin: 0;
   padding: 0;
-  /* Ensures the body takes up the entire viewport height */
   height: 100%; 
-  /* Sets a smooth color transition for the entire page */
   transition: background-color 0.3s ease;
 }
 
-/* ------------------------------------------------ */
-/* Ensure the body's background color is managed */
-/* ------------------------------------------------ */
-
-/* Assuming your main App div is a direct child of body */
 body {
-  /* This makes sure the background color of the body 
-     is controlled by the class you apply to your main <div>. */
   background-color: transparent; 
 }
-
-/* You might need to add a background color to the 'dark-mode' class 
-   or the body/html itself if the issue persists, but let's try this first. */

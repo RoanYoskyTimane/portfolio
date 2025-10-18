@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
-import myAvatar from "../assets/images/Roan Yosky.png";
+import myAvatar from "../assets/images/roanyosky.webp";
 import './styles/Hero.css';
 
 function Hero({ scrollToSection, darkMode }) {
