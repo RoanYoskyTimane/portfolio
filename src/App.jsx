@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import './styles.css'
+import Projects from "./components/Projects.jsx";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState('home');  const scrollToSection = (id) => {
@@ -31,7 +32,7 @@ function App() {
       <Hero scrollToSection={scrollToSection} darkMode={darkMode} />
       <About scrollToSection={scrollToSection} darkMode={darkMode} />
       <Skills scrollToSection={scrollToSection} darkMode={darkMode} />
-      {/* <Projects darkMode={darkMode} /> */}
+       <Projects scrollToSection={scrollToSection} darkMode={darkMode} />
       {/* <Contact darkMode={darkMode} /> */}
       {/* <Footer darkMode={darkMode} /> */}
     </div>
