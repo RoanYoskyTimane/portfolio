@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About'
+import About from './components/About';
+import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Project from './components/Project';
 import Contact from './components/Contact';
@@ -29,7 +30,7 @@ function App() {
       />
       <Hero scrollToSection={scrollToSection} darkMode={darkMode} />
       <About scrollToSection={scrollToSection} darkMode={darkMode} />
-      {/* <Skills darkMode={darkMode} /> */}
+      <Skills scrollToSection={scrollToSection} darkMode={darkMode} />
       {/* <Projects darkMode={darkMode} /> */}
       {/* <Contact darkMode={darkMode} /> */}
       {/* <Footer darkMode={darkMode} /> */}
