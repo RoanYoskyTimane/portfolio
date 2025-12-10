@@ -1,29 +1,31 @@
-import React from "react";
+import {Github, Linkedin, Mail} from 'lucide-react';
+import './styles/Footer.css';
 
-function getYear(params) 
+function getYear(params)
 {
     const d = new Date();
-    let year = d.getFullYear();
-    return year;
+    return d.getFullYear();
 }
 
-function Footer() {
+
+function Footer({ scrollToSection,darkMode }) {
     return (
         <footer className="footer">
-            <div className="footer-content">
-            <p>© {getYear()} All rights reserved Roan Yosky Timane</p>
-                <div className="social-media">
-                    <a href="https://github.com/RoanYoskyTimane" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
+            <div className="footer-container">
+                <p className="footer-text">
+                    © {getYear()}  Roan Yosky Timane. All rights reserved.
+                </p>
+                <div className="footer-social">
+                    <a href="#" className="footer-link">
+                        <Github size={20} />
                     </a>
-                    <a href="https://mz.linkedin.com/in/roan-yosky-timane-9902a0291" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-linkedin-in"></i>
+                    <a href="#" className="footer-link">
+                        <Linkedin size={20} />
+                    </a>
+                    <a href="#" className="footer-link">
+                        <Mail size={20} />
                     </a>
                 </div>
-                <nav className="footer-nav">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                </nav>
             </div>
         </footer>
     );
