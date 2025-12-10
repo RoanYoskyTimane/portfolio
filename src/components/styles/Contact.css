@@ -1,0 +1,120 @@
+.contact {
+    padding: 8rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.light-mode .contact {
+    background-color: white;
+}
+
+.dark-mode .contact {
+    background-color: #213555;
+}
+
+.contact-container {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.form-row {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.light-mode .form-input,
+.light-mode .form-textarea {
+    border-color: #E5E7EB;
+    background-color: white;
+    color: #213555;
+}
+
+.dark-mode .form-input,
+.dark-mode .form-textarea {
+    border-color: #3E5879;
+    background-color: #2C4766;
+    color: white;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+}
+
+.light-mode .form-input:focus,
+.light-mode .form-textarea:focus {
+    border-color: #3E5879;
+}
+
+.dark-mode .form-input:focus,
+.dark-mode .form-textarea:focus {
+    border-color: white;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #9CA3AF;
+}
+
+.form-textarea {
+    resize: none;
+    margin-bottom: 1.5rem;
+}
+
+.form-submit {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.submit-button {
+    padding: 1rem 3rem;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .submit-button {
+    background-color: #213555;
+}
+
+.dark-mode .submit-button {
+    background-color: white;
+    color: #213555;
+}
+
+.light-mode .submit-button:hover {
+    background-color: #3E5879;
+}
+
+.dark-mode .submit-button:hover {
+    background-color: #D1D5DB;
+}
