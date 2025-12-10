@@ -32,8 +32,8 @@ function App() {
       <Hero scrollToSection={scrollToSection} darkMode={darkMode} />
       <About scrollToSection={scrollToSection} darkMode={darkMode} />
       <Skills scrollToSection={scrollToSection} darkMode={darkMode} />
-       <Projects scrollToSection={scrollToSection} darkMode={darkMode} />
-      {/* <Contact darkMode={darkMode} /> */}
+        <Projects scrollToSection={scrollToSection} darkMode={darkMode} />
+       <Contact darkMode={darkMode} />
       {/* <Footer darkMode={darkMode} /> */}
     </div>
   )
