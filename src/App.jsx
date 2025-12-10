@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
-import Project from './components/Project';
 import Contact from './components/Contact';
 import './styles.css'
 import Projects from "./components/Projects.jsx";
@@ -33,8 +32,8 @@ function App() {
       <About scrollToSection={scrollToSection} darkMode={darkMode} />
       <Skills scrollToSection={scrollToSection} darkMode={darkMode} />
         <Projects scrollToSection={scrollToSection} darkMode={darkMode} />
-       <Contact darkMode={darkMode} />
-      {/* <Footer darkMode={darkMode} /> */}
+       <Contact scrollToSection={scrollToSection} darkMode={darkMode} />
+       <Footer scrollToSection={scrollToSection} darkMode={darkMode} />
     </div>
   )
 }
