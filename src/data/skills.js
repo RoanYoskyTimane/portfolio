@@ -1,15 +1,19 @@
-export const frontendSkills = [
-  { name: 'React', icon: '⚛️' },
-  { name: 'JavaScript', icon: '📜' },
-  { name: 'TypeScript', icon: '📘' },
-  { name: 'HTML/CSS', icon: '🎨' },
-  { name: 'Bootstrap', icon: '🅱️' }
+import react from "../assets/icons/react.svg"
+import vue from "../assets/icons/vue-js.svg"
+import spring from "../assets/icons/spring-boot.svg"
+import pgsql from "../assets/icons/pgsql.svg"
+import mysql from "../assets/icons/mysql.svg"
+import git from "../assets/icons/git.svg"
+import docker from "../assets/icons/docker.svg"
+export const coreStack = [
+  { name: 'React', icon: react  },
+  { name: 'Vue', icon: vue},
+  { name: 'Spring Boot', icon: spring },
+  {name: 'PostgreSQL', icon: pgsql},
+  {name: 'Git', icon: git},
+  {name: 'Docker', icon: docker}
 ];
 
-export const backendSkills = [
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'Express', icon: '🚂' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'PHP', icon: '🐘' },
-  { name: 'PostgreSQL', icon: '🐘' }
+export const familiarWith = [
+  {name: 'MySql', icon: mysql},
 ];

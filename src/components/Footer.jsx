@@ -16,13 +16,13 @@ function Footer({ scrollToSection,darkMode }) {
                     © {getYear()}  Roan Yosky Timane. All rights reserved.
                 </p>
                 <div className="footer-social">
-                    <a href="#" className="footer-link">
+                    <a href="https://github.com/RoanYoskyTimane" className="footer-link">
                         <Github size={20} />
                     </a>
-                    <a href="#" className="footer-link">
+                    <a href="https://mz.linkedin.com/in/roan-yosky-timane-9902a0291" className="footer-link">
                         <Linkedin size={20} />
                     </a>
-                    <a href="#" className="footer-link">
+                    <a href="mailto:roanyosky@gmail.com?subject=Contact Request&body=Hello, I would like to get in touch with you!" className="footer-link">
                         <Mail size={20} />
                     </a>
                 </div>
