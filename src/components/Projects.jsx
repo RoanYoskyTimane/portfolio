@@ -16,7 +16,15 @@ function Projects({scrollToSection, darkMode }) {
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
                             <div className="project-image">
-                                [Project Preview]
+                                {project.image ? 
+                                (
+                                    <img src={project.image} alt="" />
+                                ):(
+                                    <span className="placeholder-icon">
+                                        {project.title.charAt(0)}
+                                    </span>
+                                )}
+                                
                             </div>
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-description">{project.description}</p>
@@ -25,9 +33,9 @@ function Projects({scrollToSection, darkMode }) {
                                     <span key={tag} className="tag">{tag}</span>
                                 ))}
                             </div>
-                            <button className="project-link">
+                            <a className="project-link" href={project.link} target="_blank" rel="noopener noreferrer">
                                 View Project <ExternalLink size={14} />
-                            </button>
+                            </a>
                         </div>
                     ))}
                 </div>
