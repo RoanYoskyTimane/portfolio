@@ -1,23 +1,33 @@
-import { useState } from 'react';
+import {useState, useEffect} from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './styles/Contact.css';
 
 function Contact({ scrollToSection,darkMode }) {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
+    const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_TOKEN);
+    const [showSuccess, setShowSucess] = useState(false);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        alert('Message sent! (This is a demo)');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-    };
+    useEffect(()=>{
+        if(state.succeeded){
+            setShowSucess(true);
 
-    const handleInputChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+            const timer = setTimeout(()=>{
+                setShowSucess(false);
+            }, 5000)
+            return () => clearTimeout(timer);
+        }
+    }, [state.succeeded]
+    )
+
+    if (showSuccess) {
+        return (
+            <section id="contact" className="contact">
+                <div className="contact-container">
+                    <h2 className="section-title">Thanks for reaching out!</h2>
+                    <p className="section-description">I'll get back to you as soon as possible.</p>
+                </div>
+            </section>
+        );
+    }
 
     return (
         <section id="contact" className="contact">
@@ -28,47 +38,46 @@ function Contact({ scrollToSection,darkMode }) {
                     Have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing.
                 </p>
 
-                <div className="contact-form">
+                <form onSubmit={handleSubmit} className="contact-form">
                     <div className="form-row">
                         <input
                             type="text"
                             name="name"
                             placeholder="Name"
-                            value={formData.name}
-                            onChange={handleInputChange}
                             className="form-input"
+                            required
                         />
                         <input
                             type="email"
                             name="email"
                             placeholder="Email"
-                            value={formData.email}
-                            onChange={handleInputChange}
                             className="form-input"
+                            required
                         />
+                        <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </div>
                     <input
                         type="text"
                         name="subject"
                         placeholder="Subject"
-                        value={formData.subject}
-                        onChange={handleInputChange}
                         className="form-input"
                     />
                     <textarea
                         rows="6"
                         name="message"
                         placeholder="Message"
-                        value={formData.message}
-                        onChange={handleInputChange}
                         className="form-textarea"
+                        required
                     ></textarea>
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                     <div className="form-submit">
-                        <button onClick={handleSubmit} className="submit-button">
-                            Send Message
+                        <button type="submit" 
+                            disabled={state.submitting} 
+                            className="submit-button">
+                            {state.submitting ? 'Sending...' : 'Send Message'}
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     );
