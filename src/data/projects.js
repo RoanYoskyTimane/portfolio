@@ -1,20 +1,21 @@
+import palma from "../assets/images/palma.webp"
+import mozgnv from "../assets/images/mozgnv.webp"
+
 export const projects = [
     {
-        title: 'E-Commerce Platform',
-        description: 'Full-stack e-commerce solution with React and Node.js',
-        tags: ['React', 'Node.js', 'PostgreSQL'],
-        status: 'completed'
+        title: 'Palma Empreendimentos',
+        description: 'A portfolio website made with Vue js for Palma Empreendimentos',
+        tags: ['Vue', 'Node.js'],
+        status: 'completed',
+        image: palma,
+        link: 'https://steady-klepon-ee58c5.netlify.app/'
     },
     {
-        title: 'Task Management App',
-        description: 'Collaborative project management tool',
-        tags: ['React', 'Express', 'MongoDB'],
-        status: 'completed'
-    },
-    {
-        title: 'Portfolio CMS',
-        description: 'Content management system for creative professionals',
-        tags: ['TypeScript', 'Next.js', 'Tailwind'],
-        status: 'in-progress'
+        title: 'MOZGNV',
+        description: 'A portfolio website made with Vue js for MOZGNV',
+        tags: ['Vue', 'Node.js'],
+        status: 'completed',
+        image: mozgnv,
+        link: 'https://mozgnv.netlify.app/'
     }
 ];
