@@ -7,13 +7,10 @@ function About({ scrollToSection, darkMode }) {
         <h2 className="section-title">About Me</h2>
         <div className="section-divider"></div>
         <p className="about-text">
-          I'm a passionate full-stack developer specializing in building modern web applications. 
-          With a focus on clean architecture and user experience, I transform ideas into elegant 
-          digital solutions.
+          I don't believe in 'perfect' code, but I do believe in the right solution. I’m a software developer who thrives on the iterative process—building, learning, and refactoring until a project truly delivers an impact.
         </p>
         <p className="about-text">
-          My approach combines technical expertise with creative problem-solving, ensuring every 
-          project is both functional and beautiful.
+          I refuse to be put in a box. Whether it’s mastering a new tool or collaborating across teams to solve a complex problem, I care more about the human element of software than following architectural dogmas. Let’s build something functional, impactful, and ever-evolving.
         </p>
         <button 
           onClick={() => scrollToSection('contact')}
