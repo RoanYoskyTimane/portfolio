@@ -24,10 +24,10 @@ function Hero({ scrollToSection, darkMode }) {
         </p>
 
         <div className="hero-social">
-          <a href="https://github.com/RoanYoskyTimane" className="social-link">
+          <a href="https://github.com/RoanYoskyTimane" className="social-link" target="_blank" rel="noopener noreferrer">
             <Github size={20} />
           </a>
-          <a href="https://mz.linkedin.com/in/roan-yosky-timane-9902a0291" className="social-link">
+          <a href="https://mz.linkedin.com/in/roan-yosky-timane-9902a0291" className="social-link" target="_blank" rel="noopener noreferrer">
             <Linkedin size={20} />
           </a>
           <a href="mailto:roanyosky@gmail.com?subject=Contact Request&body=Hello, I would like to get in touch with you!"
