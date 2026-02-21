@@ -16,11 +16,11 @@ function Hero({ scrollToSection, darkMode }) {
           </div>
           <h1 className="hero-title">Roan Yosky</h1>
           <div className="hero-divider"></div>
-          <p className="hero-subtitle">Full Stack Developer</p>
+          <p className="hero-subtitle">Software Developer</p>
         </div>
         
         <p className="hero-description">
-          Crafting elegant digital experiences through clean code and thoughtful design
+          A developer who builds for people, learns without limits, and prioritizes results over 'perfect' code.
         </p>
 
         <div className="hero-social">
