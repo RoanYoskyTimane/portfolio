@@ -8,7 +8,7 @@ export const projects = [
         tags: ['Vue', 'Node.js'],
         status: 'completed',
         image: palma,
-        link: 'https://steady-klepon-ee58c5.netlify.app/'
+        link: 'https://palma-empreendimentos.netlify.app/'
     },
     {
         title: 'MOZGNV',
