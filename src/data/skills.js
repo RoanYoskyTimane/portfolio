@@ -12,6 +12,7 @@ import c from "../assets/icons/c-programming.svg"
 import php from "../assets/icons/php.svg"
 import nginx from "../assets/icons/nginx.svg"
 import linux from "../assets/icons/linux.svg"
+import go from "../assets/icons/golang.svg"
 
 export const coreStack = [
   { name: 'React', icon: react  },
@@ -28,6 +29,7 @@ export const familiarWith = [
   {name:'Python', icon: python},
   {name: 'Javascript', icon: javascript},
   {name: 'C', icon: c},
+  {name: 'Go', icon: go},
   {name: 'PHP', icon: php},
   {name: 'Nginx', icon: nginx},
   { name: 'Vue', icon: vue}
