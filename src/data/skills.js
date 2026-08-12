@@ -14,6 +14,7 @@ import nginx from "../assets/icons/nginx.svg"
 import linux from "../assets/icons/linux.svg"
 import go from "../assets/icons/golang.svg"
 import redis from "../assets/icons/redis.svg"
+import github from "../assets/icons/github.svg"
 
 export const coreStack = [
   { name: 'React', icon: react  },
@@ -29,6 +30,7 @@ export const familiarWith = [
   {name: 'MySql', icon: mysql},
   {name: 'Oracle Database', icon: oracle},
   {name:'Python', icon: python},
+  {name: 'Github', icon: github},
   {name: 'Javascript', icon: javascript},
   {name: 'C', icon: c},
   {name: 'Go', icon: go},
