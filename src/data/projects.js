@@ -4,6 +4,10 @@ import kinetic from "../assets/images/kinetic.png"
 import iris from "../assets/images/iris.png"
 import goweather from "../assets/images/go_weather.png"
 import linkprecision from "../assets/images/link_precision.png"
+import healing from "../assets/images/healing_touch_spa.png"
+import launika from "../assets/images/la_unika.png"
+import nomada from "../assets/images/nomada_club.png"
+import linaEventos from "../assets/images/lina_eventos.png"
 
 export const projects = [
     {
@@ -23,6 +27,14 @@ export const projects = [
         link: 'https://go-weather.roanyosky.dev'
     },
     {
+        title: 'Lina Eventos',
+        description: 'A portfolio website made with React for Lina Eventos',
+        tags: ['React', 'Node.js'],
+        status: 'completed',
+        image: linaEventos,
+        link: 'https://lina-eventos.roanyosky.workers.dev/'
+    },
+    {
         title: 'Iris',
         description: 'A web application for uploading and editing images',
         tags: ['React', 'Spring Boot', 'PostgreSQL', 'Docker'],
@@ -39,12 +51,28 @@ export const projects = [
         link: 'https://link-precision.roanyosky.dev'
     },
     {
+        title: 'Healing Touch Spa',
+        description: 'A portfolio website made with React for Healing Touch Spa',
+        tags: ['React', 'Node.js'],
+        status: 'completed',
+        image: healing,
+        link: 'https://healing-touch-spa.roanyosky.workers.dev/'
+    },
+    {
         title: 'Palma Empreendimentos',
         description: 'A portfolio website made with Vue js for Palma Empreendimentos',
         tags: ['Vue', 'Node.js'],
         status: 'completed',
         image: palma,
         link: 'https://palma-empreendimentos.netlify.app/'
+    },
+    {
+        title: 'La Unika',
+        description: 'A portfolio website made with React for La Unika',
+        tags: ['React', 'Node.js'],
+        status: 'completed',
+        image: launika,
+        link: 'https://la-unika.roanyosky.workers.dev/'
     },
     {
         title: 'MOZGNV',
