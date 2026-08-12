@@ -13,13 +13,15 @@ import php from "../assets/icons/php.svg"
 import nginx from "../assets/icons/nginx.svg"
 import linux from "../assets/icons/linux.svg"
 import go from "../assets/icons/golang.svg"
+import redis from "../assets/icons/redis.svg"
 
 export const coreStack = [
   { name: 'React', icon: react  },
   { name: 'Spring Boot', icon: spring },
   {name: 'PostgreSQL', icon: pgsql},
   {name: 'Git', icon: git},
-  {name: 'Docker', icon: docker}
+  {name: 'Docker', icon: docker},
+  {name: 'Redis', icon: redis}
 ];
 
 export const familiarWith = [

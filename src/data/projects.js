@@ -33,7 +33,7 @@ export const projects = [
     {
         title: 'Link Precision',
         description: 'A web application for shortening and tracking links',
-        tags: ['React', 'Go', 'PostgreSQL', 'Docker'],
+        tags: ['React', 'Go', 'PostgreSQL', 'Docker', 'Redis'],
         status: 'completed',
         image: linkprecision,
         link: 'https://link-precision.roanyosky.dev'
