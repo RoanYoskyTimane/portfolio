@@ -43,6 +43,14 @@ export const projects = [
         link: 'https://iris.roanyosky.dev'
     },
     {
+        title: 'Nomada Club',
+        description: 'A portfolio website made with React for Nomada Club',
+        tags: ['React', 'Node.js'],
+        status: 'completed',
+        image: nomada,
+        link: 'https://nomada.roanyosky.workers.dev/'
+    },
+    {
         title: 'Link Precision',
         description: 'A web application for shortening and tracking links',
         tags: ['React', 'Go', 'PostgreSQL', 'Docker', 'Redis'],
