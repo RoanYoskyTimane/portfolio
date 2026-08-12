@@ -21,7 +21,7 @@ export const projects = [
     {
         title: 'Go Weather',
         description: 'A simple weather application built with Go and React',
-        tags: ['Go', 'React'],
+        tags: ['Go', 'React', 'Docker'],
         status: 'completed',
         image: goweather,
         link: 'https://go-weather.roanyosky.dev'
