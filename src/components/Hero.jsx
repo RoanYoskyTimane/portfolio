@@ -35,14 +35,14 @@ function Hero({ scrollToSection, darkMode }) {
             <Mail size={20} />
           </a>
         </div>
-      </div>
 
-      <button 
-        onClick={() => scrollToSection('about')}
-        className="scroll-down"
-      >
-        <ChevronDown size={32} />
-      </button>
+        <button 
+          onClick={() => scrollToSection('about')}
+          className="scroll-down"
+        >
+          <ChevronDown size={32} />
+        </button>
+      </div>
     </section>
   );
 }
